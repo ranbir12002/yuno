@@ -1,0 +1,41 @@
+const getCountryData = (country) => {
+  const countryData = {
+    CO: { currency: 'COP', documentNumber: '1032765432', documentType: 'CC' },
+    US: { currency: 'USD', documentNumber: '123456789', documentType: 'SSN' },
+    BR: { currency: 'BRL', documentNumber: '12345678901', documentType: 'CPF' },
+    MX: { currency: 'MXN', documentNumber: 'ABCD123456EFG', documentType: 'CURP' },
+    AR: { currency: 'ARS', documentNumber: '12345678', documentType: 'DNI' },
+    CL: { currency: 'CLP', documentNumber: '12345678-9', documentType: 'RUT' },
+    PE: { currency: 'PEN', documentNumber: '12345678', documentType: 'DNI' },
+    UY: { currency: 'UYU', documentNumber: '12345678', documentType: 'CI' },
+    PY: { currency: 'PYG', documentNumber: '1234567', documentType: 'CI' },
+    BO: { currency: 'BOB', documentNumber: '12345678', documentType: 'CI' },
+    EC: { currency: 'USD', documentNumber: '1234567890', documentType: 'CI' },
+    VE: { currency: 'VES', documentNumber: '12345678', documentType: 'CI' },
+    GT: { currency: 'GTQ', documentNumber: '1234567890123', documentType: 'DPI' },
+    HN: { currency: 'HNL', documentNumber: '1234567890123', documentType: 'DPI' },
+    SV: { currency: 'USD', documentNumber: '1234567890123', documentType: 'DPI' },
+    NI: { currency: 'NIO', documentNumber: '1234567890123', documentType: 'DPI' },
+    CR: { currency: 'CRC', documentNumber: '123456789', documentType: 'DPI' },
+    PA: { currency: 'PAB', documentNumber: '123456789', documentType: 'DPI' },
+    DO: { currency: 'DOP', documentNumber: '12345678901', documentType: 'CI' },
+    CU: { currency: 'CUP', documentNumber: '12345678901', documentType: 'CI' },
+    JM: { currency: 'JMD', documentNumber: '123456789', documentType: 'TRN' },
+    TT: { currency: 'TTD', documentNumber: '123456789', documentType: 'TRN' },
+    BB: { currency: 'BBD', documentNumber: '123456789', documentType: 'TRN' },
+    BS: { currency: 'BSD', documentNumber: '123456789', documentType: 'TRN' },
+    AG: { currency: 'XCD', documentNumber: '123456789', documentType: 'TRN' },
+    DM: { currency: 'XCD', documentNumber: '123456789', documentType: 'TRN' },
+    GD: { currency: 'XCD', documentNumber: '123456789', documentType: 'TRN' },
+    KN: { currency: 'XCD', documentNumber: '123456789', documentType: 'TRN' },
+    LC: { currency: 'XCD', documentNumber: '123456789', documentType: 'TRN' },
+    VC: { currency: 'XCD', documentNumber: '123456789', documentType: 'TRN' },
+    SR: { currency: 'SRD', documentNumber: '123456789', documentType: 'TRN' },
+    GY: { currency: 'GYD', documentNumber: '123456789', documentType: 'TRN' },
+    BZ: { currency: 'BZD', documentNumber: '123456789', documentType: 'TRN' },
+    CA: { currency: 'CAD', documentNumber: '123456789', documentType: 'SIN' },
+  }
+  return countryData[country] || countryData.CO
+}
+
+module.exports = { getCountryData }
